@@ -1,0 +1,29 @@
+    <section class="suite">
+      <h1>Testing async</h1>
+      <dl>
+        <dt>...get google page</dt>
+        <dt>/workspaces/teste_mocha/test/testAsync.js</dt>
+        <dd><pre><code>http.get(&#x27;http://www.google.com/index.html&#x27;, function(res){
+&#x9;done();
+}).on(&#x27;error&#x27;, function(e){
+&#x9;assert.fail(e);
+})</code></pre></dd>
+      </dl>
+    </section>
+    <section class="suite">
+      <h1>Testing convert</h1>
+      <dl>
+        <dt>...toInt success</dt>
+        <dt>/workspaces/teste_mocha/test/testSync.js</dt>
+        <dd><pre><code>var input = &#x27;1&#x27;;
+var inputNumber = convert.toInt(input) || undefined;
+
+assert.notEqual(inputNumber, undefined, &#x27;Ohhh no Error!&#x27;);</code></pre></dd>
+        <dt>...toInt fail</dt>
+        <dt>/workspaces/teste_mocha/test/testSync.js</dt>
+        <dd><pre><code>var input = &#x27;123&#x27;;
+var inputNumber = convert.toInt(input) || undefined;
+
+assert.notEqual(inputNumber, undefined, &#x27;Ohhh no Error!&#x27;);</code></pre></dd>
+      </dl>
+    </section>

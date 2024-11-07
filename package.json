@@ -14,5 +14,9 @@
     "url": "teste_mocha"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-mocha": "^1.2.0",
+    "gulp-mocha": "^10.0.1"
+  }
 }
