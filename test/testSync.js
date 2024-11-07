@@ -11,6 +11,7 @@ describe('Testing convert', function(){
 	
 	it('...toInt fail', function(){
 		var input = '123';
+		var input = 'abc';
 		var inputNumber = convert.toInt(input) || undefined;
 		
 		assert.notEqual(inputNumber, undefined, 'Ohhh no Error!');
